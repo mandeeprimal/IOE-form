@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ofir12.form.MainActivity"
+    android:background="@android:color/white">
+    >
+
+
+    <ScrollView
+
+        android:layout_width="361dp"
+        android:layout_height="550dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="102dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="120dp"
+                android:src="@drawable/logo" />
+
+
+
+            <TextView
+                android:id="@+id/one"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="Tribhuvan University"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="Institute Of Engineering"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="B.E/B.Arch Examination Control Board"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:lines="02"
+                android:text="Chakupat,Lalitpur"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:layout_weight="0.21" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:text=" EXAMINATION ADMIT CARD"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+
+
+
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.06" />
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Take a photo"
+                android:onClick="dispatchTakePictureIntent"
+                android:layout_marginLeft="100dp"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Symbol number"
+                android:inputType="textPersonName"
+                android:text=""
+                android:layout_weight="0.48" />
+
+
+            <EditText
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Date Of Birth"
+                android:inputType="date" />
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="GENDER"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="MALE" />
+
+                <RadioButton
+                    android:id="@+id/radio12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FEMALE" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="College Name"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="College RollNumber"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Faculty"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Year"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Semester"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Date Of Examination"
+                android:inputType="date" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Examination"
+
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                <RadioButton
+                    android:id="@+id/radio21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="REGULAR PAPER" />
+
+                <RadioButton
+                    android:id="@+id/radio22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BACK PAPER" />
+
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Bank Voucher number"
+                android:inputType="number" />
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttn"
+                    android:text="GetSignature"
+                    android:layout_weight="1"/>
+
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
